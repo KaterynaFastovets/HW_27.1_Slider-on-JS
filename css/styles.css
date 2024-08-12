@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#container {
+  padding: 150px 20px;
+  text-align: center;
+}
+
+#next,
+#prev,
+#wrapper-slider,
+.indicator {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#wrapper-slider {
+  overflow: hidden;
+  width: 400px;
+  margin: 10px;
+  border-radius: 3px;
+  box-shadow: 1px 1px 10px 2px rgb(205, 162, 245);
+}
+
+#slider {
+  display: flex;
+  position: relative;
+  left: 0;
+  transition: 0.5s;
+}
+
+#next,
+#prev,
+.pause,
+.play {
+  padding: 5px 10px;
+  background-color: rgb(205, 162, 245);
+  color: blueviolet;
+  border-radius: 5px;
+  box-shadow: 1px 1px 10px 2px rgb(205, 162, 245);
+  cursor: pointer;
+}
+
+.pause,
+.play {
+  margin-top: 10px;
+}
+
+.indicator {
+  width: 15px;
+  height: 15px;
+  margin: 5px;
+  border-radius: 50%;
+  background-color: blueviolet;
+  cursor: pointer;
+}
+
+.active {
+  background-color: rgb(205, 162, 245);
+}
